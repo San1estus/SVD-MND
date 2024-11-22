@@ -1,3 +1,5 @@
+import numpy as np
+
 def svd(A):
     m, n = A.shape
     if np.all(A == np.zeros((m,n))):

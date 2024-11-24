@@ -38,6 +38,8 @@ matrices_prueba = [
     np.random.rand(4, 4),                                # Matriz aleatoria 4x4
     np.random.rand(5, 3),                                # Matriz no cuadrada (más filas que columnas)
     np.random.rand(3, 5),                                # Matriz no cuadrada (más columnas que filas)
+    np.random.rand(10, 10),                              # Matriz grande
+    np.random.rand(50, 50),                              # Matriz grande
     np.diag([10, 1, 0.1, 0.01]),                         # Matriz diagonal con valores decrecientes
     np.zeros((3, 3)),                                    # Matriz nula
 ]

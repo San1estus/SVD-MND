@@ -51,10 +51,12 @@ def matrizHouseholder(a):
     e = np.zeros_like(a)
     e[0] = np.linalg.norm(a)
     v = a + np.sign(a[0]) * e
-    if np.linalg.norm(v) > 1e-8:
-        v = v / np.linalg.norm(v)
+    if np.linalg.norm(v) < 1e-8:
+        return np.eye(len(a))
+    v = v / np.linalg.norm(v)
     H = np.eye(len(a)) - 2 * np.outer(v, v)
     return H
+
 
 
 def factorizacionQR(A):
